@@ -1,0 +1,252 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.main {
+    max-width: 1280px;
+    height: 900px;
+    margin: 10px 330px;
+    background: #F5F5F5;
+}
+
+.header {
+    height: 56px;
+    width: 100%;
+    background-color: red;
+}
+
+.logs__block {
+    width: 667px;
+    height: 672px;
+    margin: 15px 142px;
+    padding: 24px 22px;
+    border-radius: 8px;
+    box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.1);
+    background-color: #FFFFFF;
+}
+
+.logs {
+    font-size: 18px;
+    line-height: 28px;
+    font-weight: 600;
+}
+
+.nav__list {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    list-style-type: none;
+    margin-top: 15px;
+}
+
+
+.nav__list .nav__links:first-child {
+    background-color: #161A21;
+    color: #FFFFFF;
+}
+
+.nav__links {
+    margin-right: 16px;
+    padding: 6px 14px;
+    border-radius: 12px;
+    font-size: 14px;
+    line-height: 24px;
+    font-weight: 600;
+    background-color: silver;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.nav__list li:first-child::after {
+    content: '7';
+    border-radius: 16px;
+    padding: 2px 6px;
+    margin-left: 5px;
+    background-color: #45454A;
+    font-size: 11px;
+    line-height: 14px;
+    color: #FFFFFF;
+}
+
+.nav__list li:nth-child(2)::after {
+    content: '2';
+    border-radius: 16px;
+    padding: 2px 6px;
+    margin-left: 5px;
+    background-color: #45454A;
+    color: #FFFFFF;
+    line-height: 14px;
+    font-size: 11px;
+}
+
+.nav__list li:last-child::after {
+    content: '9';
+    border-radius: 16px;
+    padding: 2px 6px;
+    margin-left: 5px;
+    background-color: #45454A;
+    color: #FFFFFF;
+    line-height: 14px;
+    font-size: 11px;
+}
+
+.notes__block {
+    display: flex;
+    flex-direction: column;
+    margin-top: 16px;
+    padding: 4px 12px;
+    position: relative;
+}
+
+.notes__block .note__wrapper:not(:last-child) {
+    margin-bottom: 20px;
+}
+
+.note__wrapper {
+    display: flex;
+    flex-direction: column;
+}
+
+.note__top {
+    display: flex;
+    align-items: center;
+}
+
+.icon__wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: silver;
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    z-index: 10;
+}
+
+.icons {
+    width: 24px;
+    height: 24px;
+}
+
+.title__info {
+    margin-left: 6px;
+}
+
+.note__title {
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 24px;
+}
+
+.note__by {
+    font-size: 12px;
+    line-height: 16px;
+    font-weight: 400;
+}
+
+.note__description {
+    font-size: 14px;
+    line-height: 24px;
+    font-weight: 400;
+    margin-left: 42px;
+    margin-top: 8px;
+}
+
+.scroll {
+    background-color: silver;
+    width: 8px;
+    height: 210px;
+    border-radius: 8px;
+    position: absolute;
+    top: 0;
+    right: 1px;
+}
+
+.line {
+    position: absolute;
+    height: 290px;
+    width: 1px;
+    top: 10px;
+    left: 30px;
+    background-color: #D6D8E1;
+}
+
+.input {
+    width: 100%;
+    height: 75px;
+    margin-top: 8px;
+    border-radius: 12px;
+    outline: none;
+    border: 1px solid #D6D8E1;
+    padding: 20px 12px;
+}
+
+.input::placeholder {
+    font-size: 16px;
+    line-height: 24px;
+    position: absolute;
+    top: 17px;
+    left: 15px;
+}
+
+.bottom__menu {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin-top: 6px;
+}
+
+.bottom__icons {
+    display: flex;
+    list-style-type: none;
+}
+
+.bottom__icons > li {
+    width: 32px;
+    height: 32px;
+    border-radius: 12px;
+    border: 1px solid silver;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.bottom__icons li:not(:last-child) {
+    margin-right: 11px;
+}
+
+.mini__line {
+    height: 32px;
+    width: 1px;
+    background-color: silver;
+    margin: 0 18px;
+}
+
+.select__category {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid silver;
+    padding: 8px;    
+    border-radius: 12px;
+    margin-left: 2px;
+}
+
+.select__image {
+    margin-left: 5px;
+}
+
+.add__log {
+    background-color: #161A21;
+    color: #FFFFFF;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 24px;
+    padding: 12px 14px;
+    border-radius: 12px;
+    margin-top: 12px;
+}
